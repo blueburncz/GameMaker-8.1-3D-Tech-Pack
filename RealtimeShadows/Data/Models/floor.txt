@@ -1,0 +1,11 @@
+var temp;
+temp = d3d_model_create();
+d3d_model_primitive_begin(temp,pr_trianglelist);
+d3d_model_vertex_normal_texture(temp, 128.000000, 128.000000, 0.000000, 0.000000, 0.000000, -1.000000, 0.000000, 1.000000);
+d3d_model_vertex_normal_texture(temp, -128.000000, -128.000000, 0.000000, 0.000000, 0.000000, -1.000000, 1.000000, 0.000000);
+d3d_model_vertex_normal_texture(temp, 128.000000, -128.000000, 0.000000, 0.000000, 0.000000, -1.000000, 1.000000, 1.000000);
+d3d_model_vertex_normal_texture(temp, -128.000000, 128.000000, 0.000000, 0.000000, 0.000000, -1.000000, 0.000000, 0.000000);
+d3d_model_vertex_normal_texture(temp, -128.000000, -128.000000, 0.000000, 0.000000, 0.000000, -1.000000, 1.000000, 0.000000);
+d3d_model_vertex_normal_texture(temp, 128.000000, 128.000000, 0.000000, 0.000000, 0.000000, -1.000000, 0.000000, 1.000000);
+d3d_model_primitive_end(temp);
+return temp;
